@@ -7,7 +7,7 @@ import numpy as np
 from keras.preprocessing import image
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
-from prediction import predict
+# from prediction import predict
 import os
 
 model= tf.keras.models.load_model('bestmodel.h5') # Loading the Tensorflow Saved Model
