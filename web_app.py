@@ -15,7 +15,7 @@ class_type = {0:'Covid',  1 : 'Normal'}
 
 st.write("""
 # Covid-19 Test
- This app predicts if the given x-ray is covid positive or not!
+ This App Predicts if the given X-Ray is Covid Positive or Not:)
 """)
 
 # creating the sidebar
@@ -24,7 +24,7 @@ st.sidebar.markdown("""
 [Example Jpeg input file](https://github.com/AchuAshwath/MiniProject/blob/main/IM-0143-0001.jpeg)
 """)
 
-upload_file = st.sidebar.file_uploader("Upload your jpeg file here", type=["jpeg", "jpg","png"])
+upload_file = st.sidebar.file_uploader("Upload Your Jpeg File Here", type=["jpeg", "jpg","png"])
 st.write("""***""")
 
 if upload_file is not None:
@@ -37,10 +37,10 @@ if upload_file is not None:
   img = img_to_array(img)
   img = np.expand_dims(img , axis= 0 )
   res = class_type[np.argmax(model.predict(img))]
-  st.write("""The given X-Ray image is of type = """,res)
+  st.write("""The Given X-Ray Image is - """,res)
 else:
   #ipo theeku nothing
-  st.write("""no image uploaded""")
+  st.write("""No Image Uploaded""")
   
 
 
