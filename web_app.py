@@ -24,7 +24,7 @@ st.sidebar.markdown("""
 [Example Jpeg input file](https://github.com/AchuAshwath/MiniProject/blob/main/IM-0143-0001.jpeg)
 """)
 
-upload_file = st.sidebar.file_uploader("Upload Your Jpeg File Here", type=["jpeg", "jpg","png"])
+upload_file = st.sidebar.file_uploader("Upload Your Jpeg,Png File Here", type=["jpeg", "jpg","png"])
 st.write("""***""")
 
 if upload_file is not None:
